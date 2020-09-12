@@ -4,6 +4,29 @@
 
 Voilà default theme that work seamlessly for bqplot tooltip
 
+## Feature
+Modification from index.css to index-hover.css:
+```css
+.jp-OutputPrompt {
+  ...
+  /* Disable prompt display, edited from default index.css to index-hover.css*/
+  display: none;
+}
+
+.jp-RenderedText {
+  ...
+  /* edited from left only padding to all, from index.css to index-hover.css 
+  padding-left: var(--jp-code-padding);
+  */
+  padding: var(--jp-code-padding);
+}
+```
+
+Mdofication on `share/jupyter/voila/templates/hover/nbconvert_templates/voila.tpl`:
+```jinja-html
+<link rel="stylesheet" type="text/css" href="{{resources.base_url}}voila/static/index-hover.css">
+```
+
 ## Installation
 Add your installation instructions here.
 

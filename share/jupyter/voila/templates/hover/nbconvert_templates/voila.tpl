@@ -7,7 +7,7 @@
 
 
 {%- block html_head_css -%}
-<link rel="stylesheet" type="text/css" href="{{resources.base_url}}voila/static/index.css">
+<link rel="stylesheet" type="text/css" href="{{resources.base_url}}voila/static/index-hover.css">
 
 {% if resources.theme == 'dark' %}
     <link rel="stylesheet" type="text/css" href="{{resources.base_url}}voila/static/theme-dark.css">
