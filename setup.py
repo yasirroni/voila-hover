@@ -7,8 +7,6 @@ try:
 except:
     jupyter_core_paths = None
 
-pjoin = os.path.join
-
 class DevelopCmd(develop):
     prefix_targets = [
         ("nbconvert/templates", 'hover'),
