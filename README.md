@@ -7,6 +7,7 @@ Voilà default theme that work seamlessly for bqplot tooltip
 ## Feature
 
 Modification from index.css to index-hover.css:
+
 ```css
 .jp-OutputPrompt {
   ...
@@ -24,13 +25,16 @@ Modification from index.css to index-hover.css:
 ```
 
 Mdofication on `share/jupyter/voila/templates/hover/nbconvert_templates/voila.tpl`:
+
 ```jinja-html
 <link rel="stylesheet" type="text/css" href="{{resources.base_url}}voila/static/index-hover.css">
 ```
 
 ## Installation
 
-Add your installation instructions here.
+```
+pip install voila-hover
+```
 
 ## Example usage
 
