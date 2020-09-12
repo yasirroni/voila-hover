@@ -5,6 +5,7 @@
 Voilà default theme that work seamlessly for bqplot tooltip
 
 ## Feature
+
 Modification from index.css to index-hover.css:
 ```css
 .jp-OutputPrompt {
@@ -28,6 +29,7 @@ Mdofication on `share/jupyter/voila/templates/hover/nbconvert_templates/voila.tp
 ```
 
 ## Installation
+
 Add your installation instructions here.
 
 ## Example usage
@@ -36,6 +38,7 @@ To use the `voila-hover` template, pass option `--template=hover` to the `voila`
 
 
 ## Development/contributing
+
 The actual template files can be found in `share/jupyter/voila/templates/hover/nbconvert_templates/`.
 
 To view the result of the template locally without having to install this repo as a Python package you can just run:
