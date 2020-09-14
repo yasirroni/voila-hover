@@ -24,16 +24,28 @@ Modification from index.css to index-hover.css:
 }
 ```
 
-Mdofication on `share/jupyter/voila/templates/hover/nbconvert_templates/voila.tpl`:
+`voila.tpl` and other `.tpl` used in this template are based on [voila 0.1.23](https://pypi.org/project/voila/0.1.23/) with little modification on `share/jupyter/voila/templates/hover/nbconvert_templates/voila.tpl`:
 
-```jinja-html
+```html
 <link rel="stylesheet" type="text/css" href="{{resources.base_url}}voila/static/index-hover.css">
 ```
 
 ## Installation
 
-```
+```bash
 pip install voila-hover
+```
+
+## Requirement
+
+```python
+setup_args = {
+    ...
+    'install_requires': [
+        'voila>=0.1.6,<0.2'
+    ],
+    ...
+}
 ```
 
 ## Example usage
